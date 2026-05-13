@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Gaming Zone</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Alex">
+    <meta name="description" content="Página web sobre videojuegos">
+    <meta name="keywords" content="HTML, CSS, videojuegos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #1b1b1b;
+            color: white;
+        }header{
+            background-color: #111;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1{
+            color: #00ffcc;
+        }
+
+        nav{
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: #00ffcc;
+        }
+
+        main{
+            width: 90%;
+            margin: auto;
+        }
+
+        section{
+            margin-top: 40px;
+        }
+
+        h2{
+            color: #00ffcc;
+        }
+
+        p{
+            line-height: 1.6;
+        }
+
+        .imagen{
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .imagen img{
+            width: 100%;
+            height: 220px;
+            border-radius: 20px;
+            border: 3px solid white;
+        }
+
+        ul{
+            list-style-type: square;
+        }
+
+        ol{
+            list-style-type: upper-roman;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        th, td{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:hover{
+            background-color: lightgray;
+        }
+
+        #destacado{
+            background-color: #333;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        footer{
+            background-color: #111;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Gaming Zone</h1>
+        <p>Mi página web sobre videojuegos favoritos</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#juegos">Juegos</a>
+        <a href="#ranking">Ranking</a>
+        <a href="#tabla">Tabla</a>
+    </nav>
+
+    <main>
+
+        <section id="inicio">
+            <h2>¿Por qué me gustan los videojuegos?</h2>
+
+            <p>
+                Los videojuegos son una forma de entretenimiento muy divertida. 
+                Además, permiten jugar con amigos, competir online y vivir historias increíbles.
+            </p>
+
+            <p>
+                Algunos videojuegos destacan por su jugabilidad, otros por sus gráficos 
+                y otros por su música o historia.
+            </p>
+        </section>
+
+        <section id="juegos">
+
+            <h2>Mis videojuegos favoritos</h2>
+
+            <article id="destacado">
+
+                <div class="imagen">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Brawl_Stars_logo.png" alt="Brawl Stars">
+                        <figcaption>Brawl Stars</figcaption>
+                    </figure>
+                </div>
+
+                <div class="imagen">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/b/b7/Minecraft_2024_cover_art.png" alt="Minecraft">
+                        <figcaption>Minecraft</figcaption>
+                    </figure>
+                </div>
+
+                <div class="imagen">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Fortnite_Battle_Royale_logo.png" alt="Fortnite">
+                        <figcaption>Fortnite</figcaption>
+                    </figure>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section id="ranking">
+
+            <h2>Top videojuegos</h2>
+
+            <h3>Lista ordenada</h3>
+
+            <ol>
+                <li>Brawl Stars</li>
+                <li>Minecraft</li>
+                <li>Fortnite</li>
+            </ol>
+
+            <h3>Lo que más me gusta</h3>
+
+            <ul>
+                <li>Jugar online</li>
+                <li>Competir con amigos</li>
+                <li>Descubrir nuevos mapas</li>
+                <li>Mejorar habilidades</li>
+            </ul>
+
+        </section>
+
+        <section id="tabla">
+
+            <h2>Tabla de información</h2>
+
+            <table>
+
+                <tr>
+                    <th>Juego</th>
+                    <th>Género</th>
+                    <th>Año</th>
+                </tr>
+
+                <tr>
+                    <td>Brawl Stars</td>
+                    <td>Acción</td>
+                    <td>2018</td>
+                </tr>
+
+                <tr>
+                    <td>Minecraft</td>
+                    <td>Sandbox</td>
+                    <td>2011</td>
+                </tr>
+
+                <tr>
+                    <td>Fortnite</td>
+                    <td>Battle Royale</td>
+                    <td>2017</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <section>
+
+            <h2>Enlace externo</h2>
+
+            <p>
+                Puedes visitar la página oficial de 
+                <a href="https://supercell.com/en/games/brawlstars/" target="_blank">
+                    Brawl Stars
+                </a>.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Página creada por Alex - HTML5 y CSS3</p>
+    </footer>
+
+</body>
+
+</html>
