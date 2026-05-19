@@ -2,30 +2,108 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Imágenes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Juegos</title>
 
     <style>
-        .galeria{
-            display: flex;
-            gap: 10px;
+
+        body{
+            margin: 0;
+            padding: 40px;
+            background: #1e1e1e;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .galeria img{
-            width: 33%;
-            height: auto;
+        .galeria{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
+
+        .card{
+            width: 300px;
+            background: #2c2c2c;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+        }
+
+        .card img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .texto{
+            text-align: center;
+            padding: 15px;
+            color: white;
+        }
+
+        .texto h2{
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .texto p{
+            font-size: 14px;
+            color: #d0d0d0;
+            margin-top: 10px;
+        }
+
     </style>
 </head>
 
 <body>
 
     <div class="galeria">
-        <img src="Fotos/mine.jpg" alt="Minecraft">
-        <div class="texto">Minecraft</div>
-        <img src="Fotos/fortnite.jpg" alt="Fortnite">
-        <div class="texto">Fortnite</div>
-        <img src="Fotos/brawl.jpg" alt="Brawl Stars">
-        <div class="texto">Brawl Stars</div>
+
+        <div class="card">
+            <img src="Fotos/mine.jpg" alt="Minecraft">
+
+            <div class="texto">
+                <h2>Minecraft</h2>
+
+                <p>
+                    Juego de construcción y aventura donde puedes explorar,
+                    crear casas y sobrevivir en un mundo de bloques.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Fotos/fortnite.jpg" alt="Fortnite">
+
+            <div class="texto">
+                <h2>Fortnite</h2>
+
+                <p>
+                    Battle royale multijugador con construcción, acción rápida
+                    y muchos eventos especiales.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Fotos/brawl.jpg" alt="Brawl Stars">
+
+            <div class="texto">
+                <h2>Brawl Stars</h2>
+
+                <p>
+                    Juego competitivo de peleas en equipo con personajes únicos
+                    y diferentes modos de juego.
+                </p>
+            </div>
+        </div>
+
     </div>
 
 </body>
